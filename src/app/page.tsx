@@ -6,6 +6,7 @@ import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import Image from "next/image";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -35,6 +36,12 @@ export default function Home() {
           draggable={false}
         />
       </ContainerScroll>
+
+      <div className="flex w-full justify-center mb-2">
+      <Link href='/sign-in'>
+      <Button>Login</Button>
+      </Link>
+      </div>
 
     </div>
   );
